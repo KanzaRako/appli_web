@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Application Rayane et Kanza</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/post_customer.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="nav-link" href="/">Ajout</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/customers.html">Ensemble de clients</a>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-sm-7" style="background-color:#a1a1a1; padding:30px; border-radius:20px">
+				<h3>Ajout Nouveau Client</h3>
+				<form id="add_new_customer">
+					<div class="form-group">
+						<label class="control-label" for="prenom">Prenom:</label>
+						<input type="text" class="form-control" id="prenom"
+								placeholder="Entrer Prenom" name="prenom" required></input>
+                    </div>
+					<div class="form-group">
+						<label class="control-label" for="nom">Nom:</label>
+						<input type="text" class="form-control" id="nom"
+								placeholder="Entrer Nom" name="nom" required></input>
+					</div>                    
+					<div class="form-group">
+						<label class="control-label" for="ville">Ville:</label>
+						<input type="text" class="form-control" id="ville"
+								placeholder="Entrer Ville" name="ville" required></input>
+					</div>                    
+					<div class="form-group">
+						<label class="control-label" for="age">Age:</label>
+						<input type="number" class="form-control" id="age"
+								placeholder="Entrer Age" name="age" min="0" max="120" required></input>
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="pseudo">Pseudo:</label>
+						<input type="text" class="form-control" id="pseudo"
+							   placeholder="Entrer Pseudo" name="pseudo" required></input>
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="password">Password:</label>
+						<input type="text" class="form-control" id="password"
+							   placeholder="Entrer Password" name="password" required></input>
+					</div>
+					<button type="submit" class="btn btn-danger" id="btn-add-new-customer">Update</button>
+				</form>
+				<div id="response" style="display:none; margin-top:20px">
+				</div>
+			</div>
+		</div>
+		<hr>		
+	</div>
+</body>
+</html>
